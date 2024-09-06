@@ -1,3 +1,4 @@
+print("Select you gender (M = Male F = Female):")
 x = input()
 
 if x == "M":
