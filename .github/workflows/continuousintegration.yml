@@ -17,12 +17,8 @@ jobs:
           linter: pylint
 
   discord:
-    runs-on: ubuntu-latest
-    steps:
-
-    - uses: actions/checkout@v4
-
-    - name: Run Discord Webhook
-      uses: Sniddld/discord-commits@v1.6 
-      with:
-        webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
+    uses: Sniddl/discord-commits@v1.6
+    with:
+      webhook: ${{ secrets.DISCORD_WEBHOOK }}
+      template: "avatar-with-link"
+      include-extras: true
