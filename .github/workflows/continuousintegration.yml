@@ -21,6 +21,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run Discord Webhook
-      uses: johnnyhuy/actions-discord-git-webhook@main 
+      uses: EDUJOS/ds-webhook@v1.0.0
       with:
         webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
+        title: Some Title
+        description: Some Description
