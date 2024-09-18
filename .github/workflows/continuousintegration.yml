@@ -26,4 +26,3 @@ jobs:
         webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
         title: Some Title
         description: Some Description
-#teste
