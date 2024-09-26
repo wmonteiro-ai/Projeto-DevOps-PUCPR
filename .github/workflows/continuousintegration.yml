@@ -24,7 +24,6 @@ jobs:
       uses: EDUJOS/ds-webhook@v1.0.0
       with:
         webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
-        title: Some Title
-        description: Some Description
-
-#teste2
+        title: "Some Title"
+        description: "Some Description"
+#teste
