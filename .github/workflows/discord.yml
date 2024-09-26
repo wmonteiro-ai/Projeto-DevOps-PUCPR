@@ -9,7 +9,7 @@ jobs:
         steps:
         - uses: actions/checkout@v4
         - name: Run Discord Webhook
-          uses: EDUJOS/ds-webhook@v1.0.0/
+          uses: EDUJOS/ds-webhook@v1.0.0
           with:
             webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
             title: Some Title
